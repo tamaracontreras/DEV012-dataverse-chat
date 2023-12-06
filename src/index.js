@@ -1,9 +1,10 @@
 import { home } from "./views/Home.js";
+import { error } from "./views/Error.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
 
 const routes = {
   "/": home,
-  "/error": "some",
+  "/error": error,
 };
 
 const viewContainer = document.getElementById("root");
@@ -16,8 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     onURLChange(event.target.location.pathname);
   });
   
-
-
+ window.onpopstate=onURLChange;
 
 
 

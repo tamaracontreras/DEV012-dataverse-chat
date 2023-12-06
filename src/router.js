@@ -5,6 +5,7 @@ let ROUTES = {};
 let rootElement = "";
 
 export const setrootElement = (newRootElementValue) => {
+rootElement = newRootElementValue;
   // validar que newRootElementValue es un objeto html
 };
 
@@ -27,7 +28,7 @@ export const renderView = (pathname, props = {}) => {
     const newHtml = ROUTES[pathname]();
     root.appendChild(newHtml);
   } else {
-    root.appendChild(ROUTES[pathname]());
+    root.appendChild (ROUTES['/error']());
   }
   // in case not found render the error view
   // render the correct view passing the value of props
