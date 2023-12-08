@@ -1,7 +1,10 @@
 import { home } from "./views/Home.js";
-import { error } from "./views/Error.js";
+import { error } from "./views/Error_429.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
 
+//index el el unico que tiene contacto directo con nuestro html 
+
+//lo primero es traer los componentes(como sale arriba)
 const routes = {
   "/": home,
   "/error": error,
@@ -14,6 +17,8 @@ setrootElement(viewContainer);
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
+  console.log ("DOM fully loaded and parsed")
+  console.log(event.target.location.pathname);
     onURLChange(event.target.location.pathname);
   });
   
