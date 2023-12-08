@@ -1,5 +1,5 @@
 import { home } from "./views/Home.js";
-import { error } from "./views/Error_429.js";
+import { error } from "./views/Error_429_rochi.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
 
 //index el el unico que tiene contacto directo con nuestro html 
