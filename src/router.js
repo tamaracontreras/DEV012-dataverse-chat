@@ -19,14 +19,16 @@ export const setRoutes = (newRoutesValue) => {
   }
 };
 
+//oye objeto tienes este objeto (pathname ) ye devuelves algo
 export const renderView = (pathname, props = {}) => {
   // clear the root element
   const root = rootElement;
   root.innerHTML = '';
   // find the correct view in ROUTES for the pathname
+  //revisar 0:20:35 de video
   if (ROUTES[pathname]) {
-    const newHtml = ROUTES[pathname]();
-    root.appendChild(newHtml);
+    const template = ROUTES[pathname]();
+    root.appendChild(template);
   } else {
     root.appendChild (ROUTES['/error']());
   }
@@ -34,6 +36,8 @@ export const renderView = (pathname, props = {}) => {
   // render the correct view passing the value of props
   // add the view element to the DOM root element
 };
+
+// guarda el historial de navegacion 
 
 export const navigateTo = (pathname, props = {}) => {
   // update window history with pushState
@@ -43,7 +47,7 @@ export const navigateTo = (pathname, props = {}) => {
   // render the view with the pathname and props
   renderView(pathname, props);
 };
-
+//00:33:26
 export const onURLChange = (pathname) => {
   // parse the location for the pathname and search params
   // convert the search params to an object
