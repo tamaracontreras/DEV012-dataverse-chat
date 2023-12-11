@@ -1,4 +1,4 @@
-import { data } from "./data/dataset.js";
+import { data } from "../data/dataset.js";
 
 export const renderOptions = (data) => {
   let options ='' 

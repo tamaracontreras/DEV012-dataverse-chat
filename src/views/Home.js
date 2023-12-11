@@ -1,5 +1,6 @@
 import { generateFooter } from "../components/Footer.js";
 import { generateHeader} from "../components/header.js";
+import { renderOptions} from "../lib/dataFunctions.js";
 
 
 
@@ -12,8 +13,8 @@ export const home = () => {
    homeElement.appendChild(header);
 
    
-  // const body = generateBody();
-  // homeElement.appendChild(body);
+   const body = renderOptions();
+   homeElement.appendChild(body);
 
   const footer = generateFooter();
   homeElement.appendChild(footer);
