@@ -1,16 +1,22 @@
-//import { generateFooter } from "./components/Footer.js";
+import { generateFooter } from "../components/Footer.js";
+import { generateHeader} from "../components/header.js";
+
+
 
 export const home = () => {
-  const home = document.createElement("p");
-  saludo.innerHTML = "hola mundo"; 
+  const homeElement = document.createElement("p");
+  homeElement.innerHTML = "¡Hola mundo!";
 
-  //const contenedorFooter = document.createElement("div");
-  // Establecer estilos flexibles para renderizar en la misma línea
-  //contenedorFooter.style.display = "flex";
-  //contenedorFooter.style.alignItems = "center";
+  
+   const header = generateHeader();
+   homeElement.appendChild(header);
 
-  //const footer = generateFooter();
- //saludo.appendChild(footer);
+   
+  // const body = generateBody();
+  // homeElement.appendChild(body);
 
-  return saludo;
+  const footer = generateFooter();
+  homeElement.appendChild(footer);
+
+  return homeElement;
 };
