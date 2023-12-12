@@ -1,12 +1,6 @@
 import { data } from "../data/dataset.js";
 
-export const renderOptions = (data) => {
-  let options ='' 
-  data.forEach(d => {
-  options += `<option value="${d}">${d}</option>`
-  })
-  return options
-};
+
 const personajes = data
 export const renderItems = (personajes) => {
   let cards ='' 
@@ -20,11 +14,11 @@ export const renderItems = (personajes) => {
   </div>
   
   <div class ="info-container">
-    <div class="info">
-      <dt> Description:</dt> <dd itemprop="shortDescription">${personaje.shortDescription}</dd>
+   <div class="info">
+        <dt> Description:</dt> <dd itemprop="shortDescription">${personaje.shortDescription}</dd>
     </div>
     <div class="info">
-      <dt>Planet Of Birth:</dt><dd itemprop="placeOfBirth"> ${personaje.facts.placeOfBirth}<dd/>
+      <dt>Planet Of Birth:</dt> <dd itemprop="placeOfBirth"> ${personaje.facts.placeOfBirth}</dd>
     </div>
    
     <div class="info">
