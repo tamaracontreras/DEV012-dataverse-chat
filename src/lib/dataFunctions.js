@@ -1,4 +1,4 @@
-
+import { data } from "./data/dataset.js";
 
 /*eslint no-undef: "error"*/
 
@@ -62,4 +62,21 @@ export const placesOfBirth = (personajes) =>{
   //   return personajesOrdenados
   // };
   
+
+
+
+export const renderOptions = (data) => {
+  let options ='' 
+  data.forEach(d => {
+  options += `<option value="${d}">${d}</option>`
+  })
+  return options
+};
+
+// esta funcion renderiza las 24 imagenes
+// function renderCards(data){
+  // ctrl k c comentar! ctr k u descomentar
+// }
+
+//para construir objetos o elementos html que se van a renderizar en la página
   
