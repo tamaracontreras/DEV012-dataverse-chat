@@ -1,5 +1,5 @@
 import { generateFooter } from "../components/Footer.js";
-import { generateHeader} from "../components/header.js";
+//import { generateHeader} from "../components/header.js";
 
 
 
@@ -8,8 +8,8 @@ export const home = () => {
   homeElement.innerHTML = "¡Hola mundo!";
 
   
-   const header = generateHeader();
-   homeElement.appendChild(header);
+   //const header = generateHeader();
+   //homeElement.appendChild(header);
 
    
   // const body = generateBody();

@@ -188,19 +188,23 @@
     color: #072083 ;
     }
   /* align-items: center; */
+
+  .footer {
+    background-color: #FF6207;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px;
+    margin-top: 590px;
+  }
   
-  footer{
-    display: flex;
-    flex-flow: row wrap;
-    gap:15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    font-size: 40px;
-    height: 100px;
-    background-color: #072083;
-    color: #ff6207e0;
-    position: sticky
+  .footer-image {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: 100px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .footer-developers,
+  .footer-contact {
+    font-weight: bold;
   }
   
   
