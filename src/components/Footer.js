@@ -5,7 +5,7 @@ export const generateFooter = () => {
   // Agrega la imagen central desde la carpeta "images"
   const centralImage = document.createElement("img");
   centralImage.src = '/images/footer.image.png'; // Ajusta la ruta según la estructura de tu proyecto
-  //centralImage.alt = "Imagen Central";
+  centralImage.alt = "Imagen Central";
   centralImage.className = "footer-image"; // Agrega una clase para aplicar estilos desde CSS
 
   // Agrega los nombres de los desarrolladores
