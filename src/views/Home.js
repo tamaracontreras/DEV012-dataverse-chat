@@ -1,5 +1,5 @@
 import { generateFooter } from "../components/Footer.js";
-//import { generateHeader } from "../components/header.js";
+import { generateHeader } from "../components/header.js";
 import { Nav } from "../components/Nav.js";
 
 //import { renderItems} from "../components/renderCard.js";
@@ -9,8 +9,8 @@ import { Nav } from "../components/Nav.js";
 export const home = () => {
   const homeView = document.createElement("div");
 
-  //const header = generateHeader();
-  //homeView.appendChild(header);
+  const header = generateHeader();
+  homeView.appendChild(header);
 
   const nav = Nav();
   homeView.appendChild(nav);
