@@ -1,7 +1,8 @@
 import { generateFooter } from "../components/Footer.js";
-import { generateHeader} from "../components/header.js";
+import { generateHeader } from "../components/header.js";
+import { Nav } from "../components/Nav.js";
 
- import { renderItems} from "../components/renderItem.js";
+//import { renderItems} from "../components/renderCard.js";
 
 //tarea
 // crear un contenedor para contenedor para todos los componentes
