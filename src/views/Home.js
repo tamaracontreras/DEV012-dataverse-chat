@@ -6,19 +6,31 @@ import { generateHeader} from "../components/header.js";
 //tarea
 // crear un contenedor para contenedor para todos los componentes
 export const home = () => {
-  const homeElement = document.createElement("div");
-  homeElement.innerHTML = "¡Hola mundo!";
+  // Crear el contenedor principal
+const homeElement = document.createElement("div");
+const header = generateHeader();
+homeElement.appendChild(header);
+
+const footer = generateFooter();
+homeElement.appendChild(footer);
+
+ 
 
   
-   const header = generateHeader();
-   homeElement.appendChild(header);
+  // Agregar un mensaje o contenido al contenedor principal
+  // homeElement.innerHTML = "¡Hola mundo!";
 
-   
-   const body = renderItems();
-   homeElement.appendChild(body);
+  // Crear un contenedor para los elementos generados por renderItems
+  const itemsContainer = renderItems();
 
-  const footer = generateFooter();
-  homeElement.appendChild(footer);
+  // Agregar el contenedor de elementos al contenedor principal
+  homeElement.appendChild(itemsContainer);
+  
 
+
+  // Generar y agregar el footer al contenedor principal
+
+
+  // Devolver el contenedor principal
   return homeElement;
 };
