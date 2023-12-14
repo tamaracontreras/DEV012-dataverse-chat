@@ -1,9 +1,13 @@
-import { data } from "./data/dataset.js";
+import { data } from "../data/dataset.js";
 
-/*eslint no-undef: "error"*/
+export const renderOptions = (data) => {
+  let options ='' 
+  data.forEach(d => {
+  options += `<option value="${d}">${d}</option>`
+  })
+  return options
+};
 
-// exporta la funcion placeofbirth 
-//para construir el filtro
 export const placesOfBirth = (personajes) =>{
     // del objeto data guarda un array de los lugares de nacimiento de todos los personajes
     const placeOfBirthList= personajes.map(personaje => personaje.facts.placeOfBirth);
@@ -45,38 +49,4 @@ export const placesOfBirth = (personajes) =>{
     } 
     return personajes
   }
-  
-  // export const filterSort =(personajes, orden) =>{
-  //   const personajesOrdenados = personajes.sort()
-  //   return personajesOrdenados
-    
-  
-  // export const filterOrder =(personajes, orden) =>{
-  //   const personajesOrdenaz = personajes.sort();
-  //   return personajesOrdenaz
-  // }
-  
-  // export const filterOrder = (personajes, orden) => {
-  //   Crear una copia del array original antes de ordenar
-  //   const personajesOrdenados = personajes.sort(personaje =>personaje.name === orden)
-  //   return personajesOrdenados
-  // };
-  
-
-
-
-export const renderOptions = (data) => {
-  let options ='' 
-  data.forEach(d => {
-  options += `<option value="${d}">${d}</option>`
-  })
-  return options
-};
-
-// esta funcion renderiza las 24 imagenes
-// function renderCards(data){
-  // ctrl k c comentar! ctr k u descomentar
-// }
-
-//para construir objetos o elementos html que se van a renderizar en la página
-  
+ 
