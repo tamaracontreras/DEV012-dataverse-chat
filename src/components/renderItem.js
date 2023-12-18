@@ -1,10 +1,7 @@
-import { data } from "../data/dataset.js";
 
 
 
-const personajes = data
 export const renderItems = (personajes) => {
-  
   const ulElement = document.createElement('ul');
   ulElement.classList.add('parent');
 
@@ -13,6 +10,8 @@ export const renderItems = (personajes) => {
     liElement.setAttribute('itemprop', 'card');
     liElement.classList.add('card-background');
     liElement.setAttribute('itemtype', 'DragonBall');
+    const nombreEstiloDiv = document.createElement('div');
+    nombreEstiloDiv.setAttribute('id', 'nombreEstilo');
 
     const dlElement = document.createElement('dl');
     dlElement.setAttribute('itemscope', '');
@@ -21,9 +20,9 @@ export const renderItems = (personajes) => {
     const imgElement = document.createElement('img');
     imgElement.setAttribute('src', personaje.imageUrl);
     imgElement.setAttribute('alt', personaje.name);
+    imgElement.setAttribute('id', 'nombreDelId');
 
-    const nombreEstiloDiv = document.createElement('div');
-    nombreEstiloDiv.setAttribute('id', 'nombreEstilo');
+   
 
     const ddNombre = document.createElement('dd');
     ddNombre.setAttribute('itemprop', 'name');
@@ -35,7 +34,6 @@ export const renderItems = (personajes) => {
     const infoContainerDiv = document.createElement('div');
     infoContainerDiv.classList.add('info-container');
 
-    // ... Crear otros elementos aquí para el resto de la estructura ...
 
     // Agregar todos los elementos al DOM
     dlElement.appendChild(imgElement);
@@ -47,6 +45,13 @@ export const renderItems = (personajes) => {
 
   return ulElement;
 };
+
+
+
+// Luego, puedes agregar 'renderedItems' al DOM donde lo necesites
+
+
+
 
 
 // esta funcion renderiza las 24 imagenes

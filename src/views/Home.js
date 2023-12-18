@@ -1,8 +1,10 @@
 import { generateFooter } from "../components/Footer.js";
 import { generateHeader } from "../components/header.js";
+import { renderItems} from "../components/renderItem.js"
 import { Nav } from "../components/Nav.js";
-import { renderOptions, placesOfBirth, filterData, orderDataByName} from "../lib/dataFunctions.js";
+
 import { data } from "../data/dataset.js";
+
 
 
 
@@ -13,16 +15,20 @@ import { data } from "../data/dataset.js";
 export const home = () => {
 
 const homeView = document.createElement("div");
+
 const header = generateHeader();
 homeView.appendChild(header);
+
 const nav = Nav();
 homeView.appendChild(nav);
+
+const card = renderItems(data);
+homeView.appendChild(card);
 
 const footer = generateFooter();
 homeView.appendChild(footer);
 
- 
-  return homeView;
+return homeView;
 };
 
 // let resultadosActuales = data;
