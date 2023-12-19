@@ -1,6 +1,7 @@
 import { generateFooter } from "../components/Footer.js";
 import { generateHeader } from "../components/header.js";
-import { renderItems} from "../components/renderItem.js"
+import { renderItems} from "../components/renderItem.js";
+import { found }  from "../components/Detail.js";
 import { Nav } from "../components/Nav.js";
 
 import { data } from "../data/dataset.js";
@@ -27,6 +28,8 @@ homeView.appendChild(card);
 
 const footer = generateFooter();
 homeView.appendChild(footer);
+
+console.log(found)
 
 return homeView;
 };

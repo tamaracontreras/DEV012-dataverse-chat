@@ -3,6 +3,7 @@ import { error } from "./views/Error_429_rochi.js";
 import { error404 } from "./views/Error_404_androide.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
 
+
 //index el el unico que tiene contacto directo con nuestro html 
 
 //lo primero es traer los componentes(como sale arriba), creando las rutas (pathname)
