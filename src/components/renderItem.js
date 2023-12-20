@@ -83,16 +83,6 @@ const dtElement4 = document.createElement("dt");
   ddElement4.textContent = personaje.facts.mainField;
 
 
-  
-   
-
-     
-
-    
-
-
-    
-
 
     // Agregar todos los elementos al DOM
     liElement.appendChild(dlElement);

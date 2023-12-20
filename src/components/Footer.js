@@ -1,6 +1,6 @@
 export const generateFooter = () => {
   const footer = document.createElement("footer");
-  footer.className = "footer";
+  footer.className = "estiloFooter";
 
   // Agrega la imagen central desde la carpeta "images"
   const centralImage = document.createElement("img");

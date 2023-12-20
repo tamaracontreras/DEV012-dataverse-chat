@@ -1,4 +1,4 @@
-import { data } from "../data/dataset.js";
+
 
 export const renderOptions = (data) => {
   let options ='' 
@@ -34,6 +34,8 @@ export const placesOfBirth = (personajes) =>{
     personajes.sort((a, b) => {
       const nameA = a.name.toUpperCase();
       const nameB = b.name.toUpperCase();
+      
+
       if (nameA < nameB){
         return -1; 
   

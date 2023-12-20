@@ -22,7 +22,8 @@
   }
   /* estilos del filtro
   alineacion header nav h2 */
-  header ,nav, h2,  footer{
+  
+  header ,nav, h2{
     display: flex;
     flex-flow: row wrap;
     gap:15px;
@@ -33,13 +34,27 @@
   
     
   }
+
   
+  footer{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6207e0;
+    margin-top: 60px;
+    height: 150px;
+    
+  
+    
+  }
   
    
   header{background-color:  #ff6207e0;
     height: 150px;
     }
-  nav{margin-top: 80px;}
+  nav{margin-top: 100px;}
   
   h1{font-size: 50px;
   color:whitesmoke}
@@ -99,6 +114,9 @@
   
   /* 
   class de ul */
+  #cardContainer{
+    margin: 0 20px;
+  }
   .parent{
    
     display: flex;
@@ -189,13 +207,7 @@
     }
   /* align-items: center; */
 
-  .footer {
-    background-color: #FF6207;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 8px;
-    margin-top: 590px;
-  }
+
   
   .footer-image {
     width: 100px; /* Ajusta el ancho según tus necesidades */
@@ -205,6 +217,7 @@
   .footer-developers,
   .footer-contact {
     font-weight: bold;
+    color: #ffffff;
   }
   
   
@@ -279,7 +292,7 @@
   #nombreEstilo :hover{ color: #072083;}
   
   }
-  footer{background-color: black;}
+  
   /* @media only screen and (max-width: 712px) {
     h2{display: none;}
     nav{margin-top: 180px;}
