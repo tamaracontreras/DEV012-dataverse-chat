@@ -1,7 +1,7 @@
 import { generateFooter } from "../components/Footer.js";
 import { generateHeader } from "../components/header.js";
 import { renderItems} from "../components/renderItem.js";
-// import { found }  from "../components/Detail.js";
+
 import { Nav } from "../components/Nav.js";
 import{ renderOptions, placesOfBirth, filterData, orderDataByName } from "../lib/dataFunctions.js"
 

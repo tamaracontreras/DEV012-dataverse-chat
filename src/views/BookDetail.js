@@ -1,7 +1,35 @@
-// import { data } from "../data/dataset.js";
-// const id = "android-18";
-// export const found = data.find((personaje) => personaje.id === id);
-// esta funcion hay qu emoverla a dataFunctions.js
+import { detail }  from "../components/Detail.js";
+import { generateFooter } from "../components/Footer.js";
+import { generateHeader } from "../components/header.js";
+import { data } from "../data/dataset.js";
+import { found } from "../lib/dataFunctions.js";
+ 
+ export const BookDetail = () => {
+
+    const detailView = document.createElement("div");
+    const header = generateHeader();
+    detailView.appendChild(header);
+
+    const personajeEncontrado = found(data,"Bulma");
 
 
-// Expected output: 12
+    const detailComp = detail(personajeEncontrado);
+    detailView.appendChild(detailComp);
+
+
+    const footer = generateFooter();
+    detailView.appendChild(footer);
+
+    const capturarId = () =>{
+      const url =  window.location.pathname;
+      console.log(capturarId);
+      
+    };
+   
+    capturarId();
+
+    return detailView
+
+ };
+
+

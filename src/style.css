@@ -297,3 +297,56 @@
     h2{display: none;}
     nav{margin-top: 180px;}
   } */
+
+  /* ERROR  */
+
+
+/* Estilos del Título (h1) */
+
+
+/* Estilos del Párrafo (p) */
+.error-message {
+  color: #FF6207; /* Color naranja */
+  font-size: 35px; /* Tamaño de letra 25px */
+  
+   /* Alinear elementos en columna */
+}
+
+/* Estilos del Contenedor Principal (div) */
+.contenedor{
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos del Contenedor Interno de la Imagen (div) */
+.contenedorImg {
+  background-image: url("./images/Error/androide.jpg");
+  background-size: cover; /* Ajustar al tamaño del contenedor */
+  width: 1000px; /* Reemplaza con el ancho deseado */
+  height: 781px; /* Reemplaza con la altura deseada */
+  transform: scaleX(-1); /* Aplicar efecto espejo horizontal a la imagen */
+}
+
+.contenedorImg2 {
+  background-image: url("./images/Error/rochi.jpg");
+  background-size: cover; /* Ajustar al tamaño del contenedor */
+  width: 1000px; /* Reemplaza con el ancho deseado */
+  height: 781px; /* Reemplaza con la altura deseada */
+  transform: scaleX(-1); /* Aplicar efecto espejo horizontal a la imagen */
+}
+/* Estilos del Contenedor Interno del Párrafo (div) */
+.contenedorMsj {
+  width: 900px; /* Reemplaza con el ancho deseado */
+  height: 150px; /* Reemplaza con la altura deseada */
+  display: flex; /* Establecer estilos flexibles para renderizar en la misma línea */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F5F7;
+  border-radius: 70px;
+  margin-right:  20px ;
+  margin-left:  20px ;
+  box-shadow:  5px 5px 14px #c9c9c9;
+  /* margin-left: 100px; */ /* Margen a la izquierda para separar de la imagen */
+}

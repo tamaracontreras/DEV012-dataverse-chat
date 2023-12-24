@@ -114,19 +114,19 @@ export const data =  [
       }
     },
     {
-      "id": "videl", // 8
-      "name": "Videl",
-      "shortDescription": "Martial Artist",
-      "description": "Videl is the daughter of Mr. Satan and the wife of Gohan. She is a skilled martial artist.",
-      "imageUrl": "./images/Personajes/videl.jpg",
+      "id": "oolong",
+      "name": "Oolong",
+      "shortDescription": "Shape-shifting Pig",
+      "description": "Oolong is a shape-shifting anthropomorphic pig in the Dragon Ball series. He has the ability to transform into various objects and creatures.",
+      "imageUrl": "./images/Personajes/oolong.jpg",
       "facts": {
-        "yearOfBirth": 756,
-        "placeOfBirth": "Earth",
-        "mainField": "Martial Arts"
+      "yearOfBirth": 733, // Año aproximado
+      "placeOfBirth": "Earth",
+      "mainField": "Shape-shifting",
       },
       "extraInfo": {
-        "gender": "Female",
-        "imageSource": "https://www.bing.com/images/create/videl--cabello-negro-largo-3d/65281c23726342cda8da0706fd60f540?id=WxDz9nMa7NVc90PfMJVg1g%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0"
+        "gender": "Male",
+        "imageSource":" https://www.bing.com/images/create/cerdo2c-3d2cvestido-con-chaqueta-verde-oscuro-con-un/1-6585b69d492045719c7aa2f1c4e9b54d?id=Xll3JEQYUklDdhxmNv2zrw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0", // Reemplaza esto con la URL real de la imagen
       }
     },
     {

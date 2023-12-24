@@ -51,4 +51,14 @@ export const placesOfBirth = (personajes) =>{
     } 
     return personajes
   }
+
+  export const found =(data, id) => data.find((personaje) => personaje.id === id);
+
+  // export const found(data){
+  //   const buscaPersonaje=(personaje){
+  //     return personaje.id === id;
+  //   }
+  //   return data.find(buscaPersonaje)
+  // }
+
  
