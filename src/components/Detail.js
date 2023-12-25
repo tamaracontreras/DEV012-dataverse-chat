@@ -13,34 +13,49 @@
 export const detail = (personaje) => {
 const section = document.createElement("section");
 
-const info = document.createElement("div");
-info.classList.add = "info";
 
 const fotocontenedor = document.createElement("div");
-fotocontenedor.classList.add = "fotocontenedor";
+fotocontenedor.className = "fotocontenedor";
 
-const nombrePersonajeContenedor = document.createElement("div");
-nombrePersonajeContenedor.classList.add = "nombrePersonaje";
-nombrePersonajeContenedor.textContent = personaje.id;
+
+const informacion = document.createElement("div");
+informacion.className= "informacion";
+
+
+const divCont = document.createElement("div");
+divCont.className = "contTitulo";
+const idPersonaje = document.createElement("h2");
+idPersonaje.className = "EstiloId";
+idPersonaje.textContent = personaje.id;
 
 
 
 const contenedorDescripcion = document.createElement("div");
-contenedorDescripcion.classList.add= "contenedorDesc";
-contenedorDescripcion.textContent= personaje.description;
+contenedorDescripcion.className = "contenedorDesc";
+
+const parrafoDescripcion = document.createElement("p");
+parrafoDescripcion.className = "descripcionDetail";
+// Asignar el texto de la descripción al elemento p
+parrafoDescripcion.textContent = personaje.description;
 
 
 
 const botonChat = document.createElement("button");
-botonChat.classList.add= "botonChat";
+botonChat.className= "botonChat";
 botonChat.textContent = "Iniciar Chat";
 
-section.appendChild(info);
-section.appendChild(fotocontenedor);
+section.appendChild(informacion);
+informacion.appendChild(fotocontenedor);
+informacion.appendChild(divCont);
+divCont.appendChild(idPersonaje);
+informacion.appendChild(contenedorDescripcion);
 
-info.appendChild(nombrePersonajeContenedor);
-info.appendChild(contenedorDescripcion);
-contenedorDescripcion.appendChild(botonChat);
+
+
+contenedorDescripcion.appendChild(parrafoDescripcion);
+
+section.appendChild(botonChat);
+
 
 return section;
 };

@@ -350,3 +350,65 @@
   box-shadow:  5px 5px 14px #c9c9c9;
   /* margin-left: 100px; */ /* Margen a la izquierda para separar de la imagen */
 }
+
+/* 
+/* VISTA BOOK DETAIL */
+
+section{display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+/* fondo */
+.informacion{
+  background-color: #ff6207e0; 
+  border-radius: 10px;
+  list-style: none;
+  width: 800px;
+  height: 430px;
+  padding:10px 10px 10px 10px;
+  box-shadow: 5px 10px  6px #e7a27ae0;
+  margin-top: 100px;
+  flex-direction: column;
+  
+} 
+
+.fotocontenedor{
+  background-image: url("./images/Error/androide.jpg");
+  background-size: cover;
+  width: 400px; 
+  height: 400px; 
+  transform: scaleX(-1); 
+  border-radius: 20px;
+
+  
+ 
+}
+ .EstiloId{
+  font-size: 50px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 30px;
+
+  width: 100px;
+  height: 100px;
+} 
+
+ .contenedorDesc{
+  width: 800px;
+  margin-top: 30px;
+
+  background-color: #c9c9c9
+} 
+/* 
+.parrafo{
+  font-size: 30px;
+  color: whitesmoke;
+} */
+
+.botonChat{
+  width: 120px;
+
+
+}
