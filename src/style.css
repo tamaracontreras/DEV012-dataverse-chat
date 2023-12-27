@@ -6,9 +6,7 @@
     }
   body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  
   }
-  
   
   /* estilo de la imagen del header */
   #logo{
@@ -29,13 +27,9 @@
     gap:15px;
     justify-content: center;
     align-items: center;
-    color: #FF4500;
-    
-  
-    
+    color: #FF4500;  
   }
-
-  
+ 
   footer{
     display: flex;
     flex-flow: row wrap;
@@ -43,13 +37,8 @@
     justify-content: center;
     align-items: center;
     background-color: #ff6207e0;
-    margin-top: 60px;
-    height: 150px;
-    
-  
-    
+    height: 150px;  
   }
-  
    
   header{background-color:  #ff6207e0;
     height: 150px;
@@ -72,27 +61,22 @@
   
   select {
     border-radius: 10px;
-    
     align-items: center;
     width: 160px;
     height: 30px; 
-    
     font-size: 20px;
     border:3px solid #c9c9c9;
     background: #F5F5F5;
-    
     }
   
   select:hover {
     border-color:  #D67711;
   }
   
-  
   /* estilo del boton de borrar filtro */
   button {
   
     border-radius: 38px;
-  
     background-color: #ff6207e0;
     color: white;
     height: 30px;
@@ -110,8 +94,6 @@
   button:hover {
     border: 1px solid #072083 ;
     }
-  
-  
   /* 
   class de ul */
   #cardContainer{
@@ -126,7 +108,6 @@
    
   }
   /* dl{display: flex;
-  
   flex-direction: column;} */
   /* estilo del li */
   .card-background{
@@ -138,10 +119,7 @@
   padding:10px 10px 10px 10px;
   box-shadow: 5px 10px  6px #e7a27ae0;
   margin-top: 50px;
-  
   }
-  
-  
   /* estilo de la imagen */
   img {
     display: block;
@@ -152,13 +130,11 @@
     border-radius: 60px 0px 0px 0px;
     border: 0.2px solid whitesmoke;}
   /* selectores de info */
-  
-  /* 
+   /* 
   estilo del contenedor de la data */
   .info-container{
   width: 100%;
   height: 118px;
-  
   background: rgba( 255, 255, 255, 0.25 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
@@ -169,8 +145,7 @@
   padding: 8px;
   
   }
-  
-  
+   
   dt{
     margin: 0px;
     display: inline;
@@ -190,8 +165,6 @@
   margin-top: 5px;
   justify-content: center;
   }
-  
-  
   /* 
     estilo del nombre del personaje */
   span{
@@ -206,9 +179,6 @@
     color: #072083 ;
     }
   /* align-items: center; */
-
-
-  
   .footer-image {
     width: 100px; /* Ajusta el ancho según tus necesidades */
     height: 100px; /* Ajusta la altura según tus necesidades */
@@ -219,9 +189,6 @@
     font-weight: bold;
     color: #ffffff;
   }
-  
-  
-  
   /* DISEÑO RESPONSIVO */
   
   @media only screen and (min-width: 320px) and (max-width: 599px) {
@@ -237,7 +204,6 @@
         gap: 20px;
         padding: 0px 100px;
       }
-  
   
   }
   @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -359,20 +325,31 @@ section{display: flex;
   align-items: center; /* Centrar elementos horizontalmente */
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
+ 
 }
 /* fondo */
 .informacion{
-  background-color: #ff6207e0; 
   border-radius: 10px;
   list-style: none;
-  width: 800px;
-  height: 430px;
-  padding:10px 10px 10px 10px;
-  box-shadow: 5px 10px  6px #e7a27ae0;
-  margin-top: 100px;
-  flex-direction: column;
-  
+  width: 1200px;
+  height: 440px;
+  padding:20px;
+  box-shadow: 5px 10px 6px #e7a27ae0;
+  margin-top: 150px;
+  display: flex;
+  border-radius: 20px;
+  background-color: blue;
+  margin-bottom: 100px;
 } 
+
+.contCard{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
 
 .fotocontenedor{
   background-image: url("./images/Error/androide.jpg");
@@ -381,34 +358,33 @@ section{display: flex;
   height: 400px; 
   transform: scaleX(-1); 
   border-radius: 20px;
-
-  
+  margin-left: 10px;
+  margin-right: 10px;
  
 }
- .EstiloId{
+
+ #EstiloId{
   font-size: 50px;
   font-weight: bold;
-  color: whitesmoke;
-  margin-top: 30px;
-
-  width: 100px;
-  height: 100px;
+  color: #FF6207;
+  text-align: left;
+  display: block;
+  margin: 0;
 } 
 
  .contenedorDesc{
   width: 800px;
-  margin-top: 30px;
-
-  background-color: #c9c9c9
+  margin-top: 20px;
+  border-radius: 20px;
 } 
-/* 
-.parrafo{
+
+.descripcionDetail{
   font-size: 30px;
-  color: whitesmoke;
-} */
+  color: #FF6207;
+} 
 
 .botonChat{
   width: 120px;
-
-
+  margin-top: auto;
+  align-self: flex-end;
 }

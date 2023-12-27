@@ -22,10 +22,10 @@ const informacion = document.createElement("div");
 informacion.className= "informacion";
 
 
-const divCont = document.createElement("div");
-divCont.className = "contTitulo";
+const contCard = document.createElement("div");
+contCard.className = "contCard";
 const idPersonaje = document.createElement("h2");
-idPersonaje.className = "EstiloId";
+idPersonaje.setAttribute("id","EstiloId");
 idPersonaje.textContent = personaje.id;
 
 
@@ -39,22 +39,19 @@ parrafoDescripcion.className = "descripcionDetail";
 parrafoDescripcion.textContent = personaje.description;
 
 
-
+const footercard =document.createElement("div");
+footercard.className ="contFooter";
 const botonChat = document.createElement("button");
 botonChat.className= "botonChat";
 botonChat.textContent = "Iniciar Chat";
 
 section.appendChild(informacion);
 informacion.appendChild(fotocontenedor);
-informacion.appendChild(divCont);
-divCont.appendChild(idPersonaje);
-informacion.appendChild(contenedorDescripcion);
-
-
-
+informacion.appendChild(contCard);
+contCard.appendChild(idPersonaje);
+contCard.appendChild(contenedorDescripcion);
 contenedorDescripcion.appendChild(parrafoDescripcion);
-
-section.appendChild(botonChat);
+contCard.appendChild(botonChat);
 
 
 return section;

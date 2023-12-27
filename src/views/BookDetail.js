@@ -20,13 +20,13 @@ import { found } from "../lib/dataFunctions.js";
     const footer = generateFooter();
     detailView.appendChild(footer);
 
-    const capturarId = () =>{
-      const url =  window.location.pathname;
-      console.log(capturarId);
+    // const capturarId = () =>{
+    //   const url =  window.location.pathname;
+    //   console.log(capturarId);
       
-    };
+    // };
    
-    capturarId();
+    // capturarId();
 
     return detailView
 
