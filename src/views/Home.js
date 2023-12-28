@@ -16,7 +16,7 @@ export const home = () => {
 
 const homeView = document.createElement("div");
 
-const header = generateHeader();
+const header= generateHeader();
 homeView.appendChild(header);
 
 const nav = Nav();
@@ -24,6 +24,7 @@ homeView.appendChild(nav);
 
 const cardContainer = document.createElement("div");
 cardContainer.setAttribute("id", "cardContainer")
+
 const card = renderItems(data);
 cardContainer.appendChild(card);
 

@@ -1,6 +1,6 @@
 import { home } from "./views/Home.js";
-import { error429 } from "./views/Error_429_rochi.js";
-import { error404 } from "./views/Error_404_androide.js";
+import { error_rochi } from "./views/Error_429_rochi.js";
+import { error } from "./views/Error_404_androide.js";
 import { BookDetail } from "./views/BookDetail.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
 
@@ -10,8 +10,8 @@ import { setRoutes, setrootElement, onURLChange } from "./router.js";
 //lo primero es traer los componentes(como sale arriba), creando las rutas (pathname)
 const routes = {
   "/": home,
-  "/error": error404,
-  "/error2":error429,
+  "/error": error,
+  "/error2":error_rochi,
   "/detalle": BookDetail,
 
 };

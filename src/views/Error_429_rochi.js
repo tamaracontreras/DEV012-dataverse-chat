@@ -1,40 +1,26 @@
-export const error429 = () => {
-    // Crear el elemento de párrafo
-    const contenidoInternoParrafo = document.createElement("div");
-    contenidoInternoParrafo.classList.add("contenedorMsj")
-    const tittle = document.createElement("h1");
-    tittle.textContent = "x_x Error 429";
-    tittle.classList.add("error-message");
+
+import { generateHeader } from "../components/header.js";
+import { error429 } from "../components/Error_429.js";
+import { generateFooter } from "../components/Footer.js";
+
+
+export const error_rochi = () => {
+
+  const errorViewr = document.createElement("div");
+
+  const header = generateHeader();
+ errorViewr.appendChild(header);
   
-   
-    const parrafo = document.createElement("p");
-    parrafo.textContent = "Error! Muchas Solicitudes."
-      ;
-    parrafo.classList.add("error-message");
+
+
+const body = error429();
+errorViewr.appendChild(body);
+
+
   
-  
-  
-    // Crear un contenedor div para aplicar el fondo
-    const contenedor = document.createElement("div");
-    contenedor.classList.add("contenedor")
-  
-  
-    const contenidoInternoImagen = document.createElement("div");
-    contenidoInternoImagen.classList.add("contenedorImg2")
-  
-  
-    contenedor.appendChild(contenidoInternoImagen);
-  
-    // Crear un contenedor interno para el párrafo
-   
-    contenidoInternoParrafo.appendChild(tittle);
-    contenidoInternoParrafo.appendChild(parrafo);
-  
-    contenedor.appendChild(contenidoInternoParrafo);
-  
-    return contenedor;
-  };
-  
-  
-  
-  
+ 
+  const footer = generateFooter();
+  errorViewr.appendChild(footer);
+
+  return errorViewr;
+};
