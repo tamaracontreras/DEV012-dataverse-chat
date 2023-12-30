@@ -417,3 +417,50 @@ section{display: flex;
   margin-top: auto;
   align-self: flex-end;
 }
+
+/* 
+ESTILOS CHAT INDIVIDUAL */
+
+#cont_flex{
+  margin: 20px;
+  display: flex;
+ height: 300px;
+ width: 400px;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+
+
+#encabezado{
+  width: 400px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  border: 6px solid pink;
+
+}
+
+#mensaje-personaje{
+
+  width: 300px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  border: 6px solid green;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#input-usuario{
+
+  height: 40px;
+  display: block;
+  text-align: center;
+  border: 6px solid peru;
+  border-radius: 30px;
+  margin-top: 30px;
+  width: 300px;
+  margin-left: 100px;
+
+
+}

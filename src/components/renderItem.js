@@ -116,13 +116,6 @@ const dtElement4 = document.createElement("dt");
     // Agregar el div con la clase "info" al div principal con la clase "info-container"
 
    
-    
-    
-   
-  
-
-    
-    
     ulElement.appendChild(liElement);
   });
 

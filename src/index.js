@@ -3,6 +3,7 @@ import { error_rochi } from "./views/Error_429_rochi.js";
 import { error } from "./views/Error_404_androide.js";
 import { BookDetail } from "./views/BookDetail.js";
 import { setRoutes, setrootElement, onURLChange } from "./router.js";
+import { Chat } from "./views/chat.js";
 
 
 //index el el unico que tiene contacto directo con nuestro html 
@@ -13,6 +14,7 @@ const routes = {
   "/error": error,
   "/error2":error_rochi,
   "/detalle": BookDetail,
+  "/chat": Chat,
 
 };
 

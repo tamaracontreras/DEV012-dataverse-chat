@@ -1,9 +1,4 @@
 
-// const id = "android-18";
-// 
-// esta funcion hay qu emoverla a dataFunctions.js
-
-
 // Expected output: 12
 
 //fotocontendor
