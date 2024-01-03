@@ -49,6 +49,8 @@ export const navigateTo = (pathname, props = {}) => {
 };
 //00:33:26
 export const onURLChange = (pathname) => {
+
+  console.log(pathname);
   // parse the location for the pathname and search params
   // convert the search params to an object
   // render the view with the pathname and object

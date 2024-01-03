@@ -27,9 +27,15 @@ export const renderItems = (personajes) => {
     const ddNombre = document.createElement('dd');
     ddNombre.setAttribute('itemprop', 'name');
     const spanNombre = document.createElement('span');
+    const linkCard = document.createElement('a');
+    linkCard.setAttribute('href',`/detalle?id=${personaje.id}`);
+//con esta linea se hace el link a detalle capturando el id al hacer click en enlace a
+    
+    
     spanNombre.textContent = personaje.name;
-    ddNombre.appendChild(spanNombre);
+    ddNombre.appendChild(linkCard);
     nombreEstiloDiv.appendChild(ddNombre);
+    linkCard.appendChild(spanNombre);
 
 
 // agrega div de infocontainer

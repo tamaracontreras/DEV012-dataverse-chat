@@ -337,7 +337,7 @@ section{display: flex;
   flex-direction: column; /* Alinear elementos en columna */
   align-items: center; /* Centrar elementos horizontalmente */
   justify-content: center;
-  align-items: center;
+
   background-color: whitesmoke;
  
 }
@@ -349,10 +349,11 @@ section{display: flex;
   height: 440px;
   padding:20px;
   box-shadow: 5px 10px 6px #e7a27ae0;
-  margin-top: 150px;
+  margin-top: 100px;
+
   display: flex;
   border-radius: 20px;
-  background-color:	#FFF5EE ;
+  background-color:	#FFF5EE;
   margin-bottom: 100px;
 } 
 
@@ -399,6 +400,8 @@ section{display: flex;
   height: 300px;
   display: flex;
   align-items: center;
+ 
+
   
 
 } 
@@ -406,6 +409,8 @@ section{display: flex;
 .descripcionDetail{
   font-size: 30px;
   color: #FF7F50;
+  padding: 10px;
+
  
  
 
@@ -421,46 +426,93 @@ section{display: flex;
 /* 
 ESTILOS CHAT INDIVIDUAL */
 
-#cont_flex{
-  margin: 20px;
+
+.contenedorDesc{
+background-color: #ffff;
+border-radius: 20px;
+margin-bottom: 20px;
+opacity: 0.9;
+}
+#EstiloId{ 
+  font-size: 80px;
+  color: #072083;
+  }
+#message-input{
+  width: 650px ;
+  height: 80px;
+  border-radius: 20px;
+}
+
+
+[placeholder]{
+  color: #ff6207e0;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+
+}
+input{
+  border: 3px solid whitesmoke;
+  outline: none;
+  opacity: 0.9;
+}
+
+input:focus{
+  border: 3px solid #FFD700;
+
+}
+.contFooter{
   display: flex;
- height: 300px;
- width: 400px;
-  flex-direction: column;
-  border: 1px solid blue;
 }
-
-
-#encabezado{
-  width: 400px;
-  height: 40px;
-  display: block;
-  text-align: center;
-  border: 6px solid pink;
+.cont_Boton{
+flex-direction: column;
+ margin-top: 20px;
+ padding: 10px;
+ margin-left: 15px;
 
 }
 
-#mensaje-personaje{
+#fondoChat{
+  background-image: url('../images/FondoChat.jpg') ;
+  background-size: cover; 
 
-  width: 300px;
-  height: 40px;
-  display: block;
-  text-align: center;
-  border: 6px solid green;
-  border-radius: 30px;
-  margin-top: 30px;
+
+ 
+
+
+ 
 }
 
-#input-usuario{
+.informacion {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 8.5px );
+  border-radius: 10px;
+ 
 
-  height: 40px;
-  display: block;
-  text-align: center;
-  border: 6px solid peru;
-  border-radius: 30px;
-  margin-top: 30px;
-  width: 300px;
-  margin-left: 100px;
-
+  
+ 
 
 }
+
+
+
+
+
+ /* #fondoChat{
+  background-image: url("./images/FondoChat.jpg)";
+  background-size: cover;  
+  width: 900px;
+  height: 900px;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+} */
+
+  
+
+
+

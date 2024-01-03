@@ -2,6 +2,8 @@ import { generateHeader } from "../components/header.js";
 import { chatComp } from "../components/Chat_comp.js";
 import { generateFooter } from "../components/Footer.js";
 
+ 
+
 export const Chat = () => {
 
     const chatView = document.createElement("div");
