@@ -11,6 +11,10 @@ const section = document.createElement("section");
 
 const fotocontenedor = document.createElement("div");
 fotocontenedor.className = "fotocontenedor";
+const imgElement = document.createElement('img');
+imgElement.setAttribute('src', personaje.imageUrl);
+imgElement.setAttribute('alt', personaje.name);
+imgElement.setAttribute('id', 'nombreDelId');
 
 
 const informacion = document.createElement("div");
@@ -21,7 +25,7 @@ const contCard = document.createElement("div");
 contCard.className = "contCard";
 const idPersonaje = document.createElement("h2");
 idPersonaje.setAttribute("id","EstiloId");
-idPersonaje.textContent = personaje.id;
+idPersonaje.textContent = personaje.name;
 
 
 
@@ -42,6 +46,7 @@ botonChat.textContent = "Iniciar Chat";
 
 section.appendChild(informacion);
 informacion.appendChild(fotocontenedor);
+fotocontenedor.appendChild(imgElement);
 informacion.appendChild(contCard);
 contCard.appendChild(idPersonaje);
 contCard.appendChild(contenedorDescripcion);

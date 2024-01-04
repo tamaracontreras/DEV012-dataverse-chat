@@ -13,7 +13,7 @@ const routes = {
   "/": home,
   "/error": error,
   "/error2":error_rochi,
-  "/detalle": BookDetail,
+  "/detalle": BookDetail, 
   "/chat": Chat,
 
 };
@@ -25,8 +25,9 @@ setrootElement(viewContainer);
 
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log ("DOM fully loaded and parsed")
-  console.log(event.target.location.pathname);
-    onURLChange(event.target.location.pathname);
+
+    onURLChange(event.target.location.pathname, event.target.location.search);
+  
   });
   
  window.onpopstate=onURLChange;

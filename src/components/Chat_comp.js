@@ -7,6 +7,7 @@ export const chatComp = () => {
 
     const fotocontenedor = document.createElement("div");
     fotocontenedor.className = "fotocontenedor";
+   
     
     
     const informacion = document.createElement("div");

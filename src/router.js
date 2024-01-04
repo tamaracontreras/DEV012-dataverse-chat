@@ -27,7 +27,7 @@ export const renderView = (pathname, props = {}) => {
   // find the correct view in ROUTES for the pathname
   //revisar 0:20:35 de video
   if (ROUTES[pathname]) {
-    const template = ROUTES[pathname]();
+    const template = ROUTES[pathname](props);
     root.appendChild(template);
   } else {
     root.appendChild (ROUTES['/error']());
@@ -48,11 +48,12 @@ export const navigateTo = (pathname, props = {}) => {
   renderView(pathname, props);
 };
 //00:33:26
-export const onURLChange = (pathname) => {
+export const onURLChange = (pathname, params) => {
 
-  console.log(pathname);
+  const queryParams = new URLSearchParams(params);
+  const id = queryParams.get('id');
   // parse the location for the pathname and search params
   // convert the search params to an object
   // render the view with the pathname and object
-  renderView(pathname);
+  renderView(pathname, id );
 };
