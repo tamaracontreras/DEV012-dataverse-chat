@@ -22,22 +22,20 @@ export const generateFooter = () => {
   
   const icon = document.createElement("span");
   icon.className ="icon";
-  const text_mail = document.createTextNode( " tacs.laboral@gmail.com // sandy.funes93@gmail.com");
+  const text_mail = document.createTextNode( " tacs.laboral@gmail.com - sandy.funes93@gmail.com");
   text_mail.className ="mail";
   
   const icon_mail= document.createElement("i");
   icon_mail.className ="fa-regular fa-envelope";
+
+  const icon2 = document.createElement("span");
+  icon2.className ="icon2";
+  const text_git = document.createTextNode(" github.com/Saandy93  - github.com/tamaracontreras");
+  text_git.className ="git";
+  const icon_git = document.createElement("i");
+  icon_git.className ="fa-brands fa-github";
+
   
- 
-
-
-  
-  
-  contactInfo.textContent = "  | github.com/Saandy93 | github.com/tamaracontreras ";
-
-
-  const icongit = document.createElement("span");
-  icongit.className ="icon_git";
 
   
    // Agrega una clase para aplicar estilos desde CSS
@@ -47,13 +45,19 @@ export const generateFooter = () => {
   contenedor_.appendChild(contenido_Int);
   footer.appendChild(developers);
   footer.appendChild(contactInfo);
-  icon.appendChild(icon_mail); 
   contactInfo.appendChild(icon);
+  icon.appendChild(icon_mail); 
   icon.appendChild(text_mail);
+ 
+contactInfo.appendChild(icon2);
+  icon2.appendChild(icon_git);
+  icon2.appendChild(text_git);
+
+  
+  
 
 
 
-  contactInfo.appendChild(icongit);
 
   return footer;
 };

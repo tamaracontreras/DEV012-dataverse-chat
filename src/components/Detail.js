@@ -14,7 +14,7 @@ fotocontenedor.className = "fotocontenedor";
 const imgElement = document.createElement('img');
 imgElement.setAttribute('src', personaje.imageUrl);
 imgElement.setAttribute('alt', personaje.name);
-imgElement.setAttribute('id', 'nombreDelId');
+imgElement.setAttribute('id', 'img_d');
 
 
 const informacion = document.createElement("div");

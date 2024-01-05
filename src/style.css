@@ -1,71 +1,21 @@
-/* traer css de https://github.com/tamaracontreras/DEV012-dataverse/blob/2d50b7506ca29618419ab039bfd825f1217f2e57/style.css  */
+/* HOME */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
-  body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  }
-  a{
-    text-decoration: none;
-  }
-  
   /* estilo de la imagen del header */
-  #logo{
+    #logo{
    
-    height: 200px;
-    width: 200px;
-    margin-top: 20px;
-    border-radius: 0px 30px 0px 30px ;
-    box-shadow: inset 5px 5px 10px #c9c9c9,
-    inset -5px -5px 10px #ffffff;
-  }
-  /* estilos del filtro
-  alineacion header nav h2 */
-  
-  header ,nav, h2{
-    display: flex;
-    flex-flow: row wrap;
-    gap:15px;
-    justify-content: center;
-    align-items: center;
-    color: #FF4500;  
-  }
+      height: 200px;
+      width: 200px;
+      margin-top: 20px;
+      border-radius: 0px 30px 0px 30px ;
+      box-shadow: inset 5px 5px 10px #c9c9c9,
+      inset -5px -5px 10px #ffffff;
+    }
 
-  /* FOOTER */
- 
-  footer{
-    display: flex;
-    flex-flow: row wrap;
-    gap:15px;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff6207e0;
-    height: 150px;   
-  }
-  /* CONTENEDOR IMG FOOTER */ */
-  .contenedor_{width: 100px;
-    width: 100px; /* Reemplaza con el ancho deseado */
-    height: 100px;}
-/* 
-IMG ESFERA */
-  .contenedor_Img{
-    background-image: url("./images/footer.image.png");
-    background-size: cover; 
-    width: 100px;
-    height: 100px;
-
-  }
-
-  i{
-    background-image: url("./images/mail.svg");
-    background-size: cover; 
-    width: 100px;
-    height: 100px;
-
-  }
-   
+     
   header{background-color:  #ff6207e0;
     height: 150px;
     }
@@ -120,13 +70,59 @@ IMG ESFERA */
   button:hover {
     border: 1px solid #ffffff ;
     }
-  /* 
-  class de ul */
+
+ 
+  a{
+    text-decoration: none;
+  }
+  
+  /* estilos del filtro
+  alineacion header nav h2 */
+  
+  header ,nav, h2{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    color: #FF4500;  
+  }
+
+  /* FOOTER */
+ 
+  footer{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+ 
+    align-items: center;
+    background-color: #ff6207e0;
+    height: 150px;   
+  }
+  /* CONTENEDOR IMG FOOTER */ */
+  .contenedor_{width: 100px;
+    width: 100px; /* Reemplaza con el ancho deseado */
+    height: 100px;}
+/* 
+IMG ESFERA */
+  .contenedor_Img{
+    background-image: url("./images/footer.image.png");
+    background-size: cover; 
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+
+  }
+
+  body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  /*ESTILO BODY CARDS*/
+ 
   #cardContainer{
     margin: 0 20px;
   }
   .parent{
-   
     display: flex;
     flex-flow: row wrap;
     gap:30px;
@@ -134,8 +130,7 @@ IMG ESFERA */
     margin-bottom: 40px;
    
   }
-  /* dl{display: flex;
-  flex-direction: column;} */
+ 
   /* estilo del li */
   .card-background{
   background-color: #ff6207e0;
@@ -147,13 +142,13 @@ IMG ESFERA */
   box-shadow: 5px 10px  6px #e7a27ae0;
   margin-top: 50px;
   }
-  /* estilo de la imagen */
-  img {
+  /* estilo de la imagen CARD*/
+  #nombreDelId {
     display: block;
     object-fit: cover;
     padding: 0px;
     width: 100%;
-     height: 260px;
+    height: 260px;
     border-radius: 60px 0px 0px 0px;
     border: 0.2px solid whitesmoke;}
   /* selectores de info */
@@ -205,18 +200,9 @@ IMG ESFERA */
   span:hover {
     color: #072083 ;
     }
-  /* align-items: center; */
 
-  
- 
- 
-  
-  /* @media only screen and (max-width: 712px) {
-    h2{display: none;}
-    nav{margin-top: 180px;}
-  } */
 
-  /* ERROR  */
+  /*--------------------- ERROR 404 -----------------------*/
 
 
 /* Estilos del Título (h1) */
@@ -226,8 +212,6 @@ IMG ESFERA */
 .error-message {
   color: #FF6207; /* Color naranja */
   font-size: 35px; /* Tamaño de letra 25px */
-  
-   /* Alinear elementos en columna */
 }
 
 /* Estilos del Contenedor Principal (div) */
@@ -236,8 +220,7 @@ IMG ESFERA */
   align-items: center;
   margin-top: 150px;
   margin-bottom: 60px;
- 
-  justify-content: center;
+ justify-content: center;
 }
 
 /* Estilos del Contenedor Interno de la Imagen (div) */
@@ -252,6 +235,9 @@ background-image: url("./images/Error/androide.jpg");
 
   /* Aplicar efecto espejo horizontal a la imagen */
 }
+
+
+  /*--------------------- ERROR 429 -----------------------*/
 
 .contenedorImg2 {
   background-image: url("./images/Error/rochi.jpg");
@@ -301,11 +287,11 @@ section{display: flex;
   padding:20px;
   box-shadow: 5px 10px 6px #e7a27ae0;
   margin-top: 100px;
-
   display: flex;
   border-radius: 20px;
-  background-color:	#FFF5EE;
+  background-color: #FFFAFA;
   margin-bottom: 100px;
+  
 } 
 
 .contCard{
@@ -313,22 +299,27 @@ section{display: flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   
 }
 
 .fotocontenedor{
 
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  transform: scaleX(-1); 
-  border-radius: 20px;
+  border-radius: 20px 0;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid #ffffff; 
+  border: 3px solid #e2c7c7 outset; 
+  
  
 }
+#img_d {
 
+  object-fit: cover;
+  width: 100%;
+  height: 399px;
+  border-radius: 20px 0;
+  
+}
 
 
  #EstiloId{
@@ -347,10 +338,7 @@ section{display: flex;
   border-radius: 20px;
   height: 300px;
   display: flex;
-  align-items: center;
- 
-
-  
+  text-align: justify;
 
 } 
 
@@ -358,22 +346,17 @@ section{display: flex;
   font-size: 30px;
   color: #FF7F50;
   padding: 10px;
-
- 
- 
-
-  
+  word-wrap: break-word; 
 } 
 
 .botonChat{
-  width: 120px;
+  width: 160px;
   margin-top: auto;
   align-self: flex-end;
 }
 
 /* 
 ESTILOS CHAT INDIVIDUAL */
-
 
 .contenedorDesc{
 background-color: #ffff;
@@ -390,7 +373,6 @@ opacity: 0.9;
   height: 80px;
   border-radius: 20px;
 }
-
 
 [placeholder]{
   color: #ff6207e0;
@@ -424,30 +406,19 @@ flex-direction: column;
 #fondoChat{
   background-image: url('../images/FondoChat.jpg') ;
   background-size: cover; 
-
-
- 
-
-
- 
 }
 
 .informacion {
-  background: rgba( 255, 255, 255, 0.05 );
+
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 8.5px );
   border-radius: 10px;
- 
-
-  
- 
 
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 599px) {
-  
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* HOME RESPONSIVO 1 */
   body {background: whitesmoke;}
   header{background:#e59982;height: 180px;}
   h2{display: none;}
@@ -463,6 +434,7 @@ flex-direction: column;
   .fotocontenedor{
     flex-direction: column ;
     width: 427px;
+    margin: 5px;
 
     }
 
@@ -478,17 +450,61 @@ flex-direction: column;
   .contenedorDesc{
     width: 427px;
     flex-direction: column;
+    margin-top: 120px;
+    height: 600px;
 
 
   }
 
+  /* 
+DETAIL RESPONSIVO 1*/
+
+
+.informacion{
+ 
+  width: 320px;
+  height: 750px;
+
+} 
+.fotocontenedor{
+width: 97%;
+height: 260px;
 }
 
- /* DISEÑO RESPONSIVO */
+#EstiloId{
+font-size: 40px;
+ text-align: center;
+}
+.contenedorDesc{
+  width: 280px;
+ height: 330px;}
+
+
+
+
+ .descripcionDetail{
+  font-size: 25px;
+  word-wrap: break-word; 
+ 
+}
+
+.botonChat{
+  width: 170px;
+  
+  align-self: center;
+}
+
+}
+
+
+
+ /* DISEÑO RESPONSIVO 2 */
   
  
  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    
+  
+  /* HOME  RESPOSIVO 2--------*/
+
   body {background: whitesmoke;}
   header{background:#072083;height: 180px;}
 
@@ -538,40 +554,66 @@ h1{
 
 #nombreEstilo :hover{ color: #072083;}
 
-
-
 .fotocontenedor{
   flex-direction: column ;
-  width: 427px;
-
-
+  width: 227px;
 
   }
+ 
 
-  .fotocontenedor img{
-    width: 100%;
-    height: 100%;
 
-   
-  }
-  
-  
+
+
+
+
+/* DETAIL RESPONSIVO 2----------- */
+
 
 .informacion{
 
   width: 490px;
-  height: 940px;
+  height: 700px;
   flex-direction: column;
+  padding: 10;
   
 }
 
+.fotocontenedor{
+  width: 96%;
+  height: 440px;
+  padding: 0;
+  }
+
+  #img_d{
+    height: 400px;
+  }
+
+  #EstiloId{
+    font-size: 40px;
+     text-align: center;
+    }
 
 .contenedorDesc{
-  width: 427px;
-  flex-direction: column;
+  margin-top: 10px;
+  width: 435px;
+  height: 155px;
+  justify-content: center;
+  text-align: justify;
 
+}
 
-}}
+.descripcionDetail{
+  font-size: 25px;
+  text-align: justify;
+ 
+}
+
+.botonChat{
+  width: 180px;
+  margin-top: auto;
+  align-self: center;
+}
+}
 
 
 
