@@ -28,6 +28,10 @@ export const renderItems = (personajes) => {
     ddNombre.setAttribute('itemprop', 'name');
     const spanNombre = document.createElement('span');
     const linkCard = document.createElement('a');
+    // linkCard.addEventListener("click", function(){
+    //   navegateTo("/BookDetail", personaje.id)
+    
+    
     linkCard.setAttribute('href',`/detalle?id=${personaje.id}`);
 //con esta linea se hace el link a detalle capturando el id al hacer click en enlace a
     

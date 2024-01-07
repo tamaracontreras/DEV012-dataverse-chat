@@ -34,6 +34,7 @@ export const generateFooter = () => {
   text_git.className ="git";
   const icon_git = document.createElement("i");
   icon_git.className ="fa-brands fa-github";
+  
 
   
 

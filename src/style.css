@@ -108,11 +108,38 @@ IMG ESFERA */
   .contenedor_Img{
     background-image: url("./images/footer.image.png");
     background-size: cover; 
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+    margin-left: 250px;
 
   }
+  .footer-developers{
+    color: #F5F5F5;
+    font-size: 18px;
+    margin-left: 160px;
+   
+  }
+
+ .icon, .icon2{
+    color: #F5F5F5;
+    align-items: center;
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 18px;
+
+   
+    
+  }
+.icon:hover{
+  color: #F5F5F5;
+  
+}
+
+.icon2:hover{
+  color: #F5F5F5;
+  
+}
+
 
   body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -279,10 +306,10 @@ section{display: flex;
  
 }
 /* fondo */
-.informacion{
+.informacion_{
   border-radius: 10px;
   list-style: none;
-  width: 1200px;
+  width: 800px;
   height: 440px;
   padding:20px;
   box-shadow: 5px 10px 6px #e7a27ae0;
@@ -294,7 +321,12 @@ section{display: flex;
   
 } 
 
-.contCard{
+.fotocontenedor_{
+
+  width: 550px;
+}
+
+.contCard_{
   padding: 0 10px;
   display: flex;
   flex-direction: column;
@@ -303,15 +335,6 @@ section{display: flex;
   
 }
 
-.fotocontenedor{
-
-  border-radius: 20px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 3px solid #e2c7c7 outset; 
-  
- 
-}
 #img_d {
 
   object-fit: cover;
@@ -321,19 +344,19 @@ section{display: flex;
   
 }
 
-
- #EstiloId{
-  font-size: 100px;
+ #EstiloId_{
+  font-size: 60px;
   font-weight: bold;
   color: #FF7F50;
   text-align: left;
   display: block;
   margin: 0;
+  padding: 20px;
   
 } 
 
- .contenedorDesc{
-  width: 800px;
+ .contenedorDesc_{
+  width: 450px;
   margin-top: 20px;
   border-radius: 20px;
   height: 300px;
@@ -342,14 +365,14 @@ section{display: flex;
 
 } 
 
-.descripcionDetail{
-  font-size: 30px;
+.descripcionDetail_{
+  font-size: 25px;
   color: #FF7F50;
-  padding: 10px;
+  padding: 20px;
   word-wrap: break-word; 
 } 
 
-.botonChat{
+.botonChat_{
   width: 160px;
   margin-top: auto;
   align-self: flex-end;
@@ -422,6 +445,7 @@ flex-direction: column;
   body {background: whitesmoke;}
   header{background:#e59982;height: 180px;}
   h2{display: none;}
+  footer{background-color: #e59982}
   
   h1{display: none;}
 
@@ -460,38 +484,66 @@ flex-direction: column;
 DETAIL RESPONSIVO 1*/
 
 
-.informacion{
+.informacion_{
  
-  width: 320px;
-  height: 750px;
+  width: 315px;
+  height: 700px;
+  flex-wrap: wrap;
+  background-color: #FFA07A;
+  
 
 } 
-.fotocontenedor{
-width: 97%;
-height: 260px;
+.fotocontenedor_{
+width: 275px;
+height: 255px;
+padding: 5px;
+
+}
+#img_d {
+
+  width: 270px;
+  height: 250px;
+  border-radius: 20px;
+ 
+  
+}
+.contCard_{
+   height: 500px;
+width: 290px;
+padding: 0px;
+
+
 }
 
-#EstiloId{
-font-size: 40px;
- text-align: center;
+
+#EstiloId_{
+  font-size: 40px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 0px;
+  color:#005F85;
 }
-.contenedorDesc{
-  width: 280px;
- height: 330px;}
+.contenedorDesc_{
+width: 275px;
+ height: 300px;
+margin-top: 0;
+background-color: #F5F5F5;
+opacity: 0.8;
+}
 
 
-
-
- .descripcionDetail{
-  font-size: 25px;
-  word-wrap: break-word; 
+ .descripcionDetail_{
+  font-size: 22px;
+ 
+  padding: 15px;
  
 }
 
-.botonChat{
+.botonChat_{
   width: 170px;
-  
   align-self: center;
+  margin-top: 20px;
+  background-color: #005F85;
 }
 
 }
@@ -507,6 +559,7 @@ font-size: 40px;
 
   body {background: whitesmoke;}
   header{background:#072083;height: 180px;}
+  footer{background-color: #072083;}
 
   header , h2,  footer, button, h1, nav{
   display: flex;
@@ -514,7 +567,9 @@ font-size: 40px;
   align-items: center;
   justify-content: center;
   }
-
+/* button{
+  flex-direction: column;
+} */
 h1{
     font-size: 40px;
     color: whitesmoke;
@@ -562,56 +617,78 @@ h1{
  
 
 
-
-
-
-
 /* DETAIL RESPONSIVO 2----------- */
 
 
-.informacion{
+.informacion_{
 
   width: 490px;
-  height: 700px;
+  height: 600px;
   flex-direction: column;
   padding: 10;
-  
+  background-color: #4682B4;
 }
 
-.fotocontenedor{
-  width: 96%;
-  height: 440px;
-  padding: 0;
+.fotocontenedor_{
+  width: 448px;
+  height: 210px;
+  padding:0 20px;
+  margin-top: 5px;
+ 
+  
+ 
   }
 
   #img_d{
-    height: 400px;
+  width:100%;
+  height:210px ;
+  align-items: center;
+  justify-content: center;
   }
 
-  #EstiloId{
-    font-size: 40px;
+  .contCard_{
+    justify-content: center;
+    padding:0  20px;
+    margin-top: 0px;
+
+  }
+
+  #EstiloId_{
+    font-size: 35px;
      text-align: center;
+     padding:0px 10px;
+     color: #191970;
+     
     }
 
-.contenedorDesc{
-  margin-top: 10px;
-  width: 435px;
-  height: 155px;
-  justify-content: center;
+.contenedorDesc_{
+  margin-top: 5px;
+  width: 412px;
+  height: 250px;
+justify-content: center;
   text-align: justify;
-
+  background-color: #F5F5F5;
+  opacity: 0.3;
+  align-items: center;
+ 
+  
 }
 
-.descripcionDetail{
+.descripcionDetail_{
   font-size: 25px;
   text-align: justify;
- 
+  width: 100%;
+  color: #191970;
+  padding: 0 20px;
+  
 }
 
-.botonChat{
+.botonChat_{
   width: 180px;
-  margin-top: auto;
+  margin-top: 15px;
   align-self: center;
+  background-color: #191970;
+  box-shadow:5px 5px 14px #686464;
 }
 }
 
