@@ -43,6 +43,7 @@ export const generateFooter = () => {
 
   // Agrega los elementos al footer
   footer.appendChild(contenedor_);
+ 
   contenedor_.appendChild(contenido_Int);
   footer.appendChild(developers);
   footer.appendChild(contactInfo);
