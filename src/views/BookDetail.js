@@ -28,8 +28,29 @@ import { found } from "../lib/dataFunctions.js";
    
     // capturarId();
 
+      const miBoton = detailView.querySelector("#chat");
+      miBoton.addEventListener('click', function(){
+         window.location.href = `/chat?id=${id}`;
+
+      });
+  
+
+// // Asignar un evento al hacer clic en el botón
+// miBoton.addEventListener('onClick', function() {
+// // //   Redirigir a la URL deseada
+// //   window.location.href = `/chat?id=${id}`;
+// console.log("hola")
+
+// });
+
+
     return detailView
 
  };
+
+//  evento dom chat
+
+
+
 
 

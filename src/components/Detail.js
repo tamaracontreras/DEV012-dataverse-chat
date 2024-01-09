@@ -33,6 +33,8 @@ export const detail = (personaje) => {
     const botonChat = document.createElement("button");
     botonChat.className = "botonChat_";
     botonChat.textContent = "Iniciar Chat";
+    botonChat.setAttribute("id", "chat");
+    botonChat.setAttribute("type", "button");
   
     section.appendChild(informacion);
     informacion.appendChild(fotocontenedor);
@@ -43,7 +45,8 @@ export const detail = (personaje) => {
     contenedorDescripcion.appendChild(parrafoDescripcion);
     contCard.appendChild(botonChat);
   
-  
+   
+    
 
 return section;
 };
