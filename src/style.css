@@ -399,20 +399,53 @@ width: 352px;
 /* 
 ESTILOS CHAT INDIVIDUAL */
 
-.contenedorDesc{
+#fondoChat{
+  background-image: url('../images/FondoChat.jpg') ;
+  background-size: cover; 
+  height: 800px;
+  width: 100%;
+}
+/* fondo chat transparente */ */
+.basechat{
+
+  border-radius: 10px;
+  list-style: none;
+  width: 800px;
+  height: 440px;
+  padding:20px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 100px;
+background-color: #005F85;
+  
+
+}
+/* 
+contemedor de imagen */
+.image_cont{
+
+  width: 200px;
+    height: 200px ;
+    border: 3px solid whitesmoke ;
+    border-radius: 50px 0px 0px 0px ;
+    
+  
+  }
+
+.cont_Card{
 background-color: #ffff;
 border-radius: 20px;
 margin-bottom: 20px;
 opacity: 0.9;
+height: 400px;
 }
-#EstiloId{ 
-  font-size: 80px;
-  color: #072083;
-  }
+
 #message-input{
-  width: 650px ;
+  width: 600px ;
   height: 80px;
   border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
 }
 
 [placeholder]{
@@ -433,30 +466,23 @@ input:focus{
   border: 3px solid #FFD700;
 
 }
+
+/* input chat y boton send  */
 .contFooter{
   display: flex;
+  margin-top: 270px;
 }
 .cont_Boton{
 flex-direction: column;
  margin-top: 20px;
- padding: 10px;
- margin-left: 15px;
+ padding: 20px;
+ margin-left: 5px;
 
 }
 
-#fondoChat{
-  background-image: url('../images/FondoChat.jpg') ;
-  background-size: cover; 
-}
 
-.informacion {
 
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 8.5px );
-  border-radius: 10px;
 
-}
 
 @media only screen and (min-width: 360px) and (max-width: 600px) {
   /* HOME RESPONSIVO 1 */

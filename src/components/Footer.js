@@ -26,7 +26,9 @@ export const generateFooter = () => {
   text_mail.className ="mail";
   
   const icon_mail= document.createElement("i");
-  icon_mail.className ="fa-regular fa-envelope";
+  icon_mail.className ="fa-solid fa-compass-drafting";
+
+
 
   const icon2 = document.createElement("span");
   icon2.className ="icon2";
