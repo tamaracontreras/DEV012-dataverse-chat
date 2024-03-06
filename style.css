@@ -1,0 +1,812 @@
+/* HOME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  /* estilo de la imagen del header */
+    #logo{
+   
+      height: 200px;
+      width: 200px;
+      margin-top: 20px;
+      border-radius: 0px 30px 0px 30px ;
+      box-shadow: inset 5px 5px 10px #c9c9c9,
+      inset -5px -5px 10px #ffffff;
+    }
+
+     
+  header{background-color:  #ff6207e0;
+    height: 150px;
+    }
+  nav{margin-top: 100px;}
+  
+  h1{font-size: 50px;
+  color:whitesmoke}
+  h2{
+    font-size: 30px;
+   margin-top: 10px;
+    margin-left: 60px;
+  }
+  
+  label{
+    font-size: 30px;
+    color: #072083;
+    font-weight: 200;
+  }
+  
+  select {
+    border-radius: 10px;
+    align-items: center;
+    width: 160px;
+    height: 30px; 
+    font-size: 20px;
+    border:3px solid #c9c9c9;
+    background: #F5F5F5;
+    }
+  
+  select:hover {
+    border-color:  #D67711;
+  }
+  
+  /* estilo del boton de borrar filtro */
+  button {
+  
+    border-radius: 38px;
+    background-color: #ff6207e0;
+    color: white;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+    align-items: center;
+    box-shadow:  5px 5px 14px #c9c9c9;
+    font-size: 15px;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+  }
+  button:active {
+    transform: translateY(3px);}
+  
+  button:hover {
+    border: 1px solid #ffffff ;
+    }
+
+ 
+  a{
+    text-decoration: none;
+  }
+  
+  /* estilos del filtro
+  alineacion header nav h2 */
+  
+  header ,nav, h2{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    color: #FF4500;  
+  }
+
+  /* FOOTER */
+ 
+  footer{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+ 
+    align-items: center;
+    background-color: #ff6207e0;
+    height: 150px;   
+  }
+  /* CONTENEDOR IMG FOOTER */ */
+  .contenedor_{width: 100px;
+    width: 100px; /* Reemplaza con el ancho deseado */
+    height: 100px;}
+/* 
+IMG ESFERA */
+  .contenedor_Img{
+    background-image: url("./images/footer.image.png");
+    background-size: cover; 
+    width: 50px;
+    height: 50px;
+    margin-left: 250px;
+
+  }
+  .footer-developers{
+    color: #F5F5F5;
+    font-size: 18px;
+    margin-left: 160px;
+   
+  }
+
+ .icon, .icon2{
+    color: #F5F5F5;
+    align-items: center;
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 18px;
+
+   
+    
+  }
+.icon:hover{
+  color: #F5F5F5;
+  
+}
+
+.icon2:hover{
+  color: #F5F5F5;
+  
+}
+
+
+  body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  /*ESTILO BODY CARDS*/
+ 
+  #cardContainer{
+    margin: 0 20px;
+  }
+  .parent{
+    display: flex;
+    flex-flow: row wrap;
+    gap:30px;
+    justify-content: center;
+    margin-bottom: 40px;
+   
+  }
+ 
+  /* estilo del li */
+  .card-background{
+  background-color: #ff6207e0;
+  border-radius: 10px;
+  list-style: none;
+  width: 200px;
+  height: 430px;
+  padding:10px 10px 10px 10px;
+  box-shadow: 5px 10px  6px #e7a27ae0;
+  margin-top: 50px;
+  }
+  /* estilo de la imagen CARD*/
+  #nombreDelId {
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+    width: 100%;
+    height: 260px;
+    border-radius: 60px 0px 0px 0px;
+    border: 0.2px solid whitesmoke;}
+  /* selectores de info */
+   /* 
+  estilo del contenedor de la data */
+  .info-container{
+  width: 100%;
+  height: 118px;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 0px 0px 38px 0px;
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.2;
+  padding: 8px;
+  
+  }
+   
+  dt{
+    margin: 0px;
+    display: inline;
+    }
+  
+  dd{display: inline;}  
+  /* 
+  estilo del div que contiene el nombre del personaje */
+  #nombreEstilo{
+  
+  width: 100%;
+  height: 25px;
+  background-color: whitesmoke;
+  border-radius: 0px;
+  padding: 0px 0px 10px;
+  align-content: center;
+  margin-top: 5px;
+  justify-content: center;
+  }
+  /* 
+    estilo del nombre del personaje */
+  span{
+  color: #D67711;
+  font-size: 25px;
+  align-items: center;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  }
+  span:hover {
+    color: #072083 ;
+    }
+
+
+  /*--------------------- ERROR 404 -----------------------*/
+
+
+/* Estilos del Título (h1) */
+
+
+/* Estilos del Párrafo (p) */
+.error-message {
+  color: #FF6207; /* Color naranja */
+  font-size: 35px; /* Tamaño de letra 25px */
+}
+
+/* Estilos del Contenedor Principal (div) */
+.contenedor{
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+ justify-content: center;
+}
+
+/* Estilos del Contenedor Interno de la Imagen (div) */
+.contenedorImg {
+background-image: url("./images/Error/androide.jpg");
+  background-size: cover; /* Ajustar al tamaño del contenedor */
+  width: 350px; /* Reemplaza con el ancho deseado */
+  height: 250px; /* Reemplaza con la altura deseada */
+  transform: scaleX(-1); 
+  border-radius: 40px;
+  box-shadow:  5px 5px 14px #c9c9c9;
+
+  /* Aplicar efecto espejo horizontal a la imagen */
+}
+
+
+  /*--------------------- ERROR 429 -----------------------*/
+
+.contenedorImg2 {
+  background-image: url("./images/Error/rochi.jpg");
+  background-size: cover; /* Ajustar al tamaño del contenedor */
+  width: 350px; /* Reemplaza con el ancho deseado */
+  height: 250px; /* Reemplaza con la altura deseada */
+  transform: scaleX(-1); 
+  border-radius: 40px;
+  box-shadow:  5px 5px 14px #c9c9c9;/* Aplicar efecto espejo horizontal a la imagen */
+  
+}
+/* Estilos del Contenedor Interno del Párrafo (div) */
+.contenedorMsj {
+  width:350px; /* Reemplaza con el ancho deseado */
+  height: 250px; /* Reemplaza con la altura deseada */
+  display: flex; /* Establecer estilos flexibles para renderizar en la misma línea */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F5F7;
+  border-radius: 40px;
+  margin-right:  20px ;
+  margin-left:  20px ;
+  box-shadow:  5px 5px 14px #c9c9c9;
+  text-align: center;
+  /* margin-left: 100px; */ /* Margen a la izquierda para separar de la imagen */
+}
+
+/* 
+/* VISTA BOOK DETAIL */
+
+section{display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center;
+
+  background-color: whitesmoke;
+ 
+}
+/* fondo */
+.informacion_{
+  border-radius: 10px;
+  list-style: none;
+  width: 800px;
+  height: 440px;
+  padding:20px;
+  box-shadow: 5px 10px 6px #e7a27ae0;
+  margin-top: 100px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #ff6207e0;
+  margin-bottom: 100px;
+  
+} 
+
+.fotocontenedor_{
+
+width: 352px;
+  height: 362px ;
+  border: 3px solid whitesmoke ;
+  border-radius: 50px 0px 0px 0px ;
+  
+
+}
+
+#img_d {
+
+  object-fit: cover;
+  width: 308px;
+  height: 357px;
+  border-radius: 45px 0px 0px 0px;
+ 
+}
+.contCard_{
+  padding:  0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 13px;
+
+
+  
+}
+
+  
+ #EstiloId_{
+  font-size: 45px;
+  font-weight: bold;
+  color: #ff6207e0;
+
+  width: 433px;
+  height: 70px;
+  margin: 0;
+  background-color: whitesmoke;
+
+  
+
+   
+ 
+  
+  
+} 
+
+ .contenedorDesc_{
+  width: 435px;
+  margin-top: 10px;
+  border-radius: 0px 0px 50px 0px;
+  height: 280px;
+  display: flex;
+  text-align: justify;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  
+  
+
+} 
+
+.descripcionDetail_{
+  font-size: 25px;
+  color: #FF7F50;
+  padding: 10px;
+  word-wrap: break-word; 
+} 
+
+.botonChat_{
+  width: 160px;
+  margin-top: 10px;
+  align-self: center;
+}
+
+/* 
+ESTILOS CHAT INDIVIDUAL */
+
+#fondoChat{
+  background-image: url('../images/FondoChat.jpg') ;
+  background-size: cover; 
+  height: 800px;
+  width: 100%;
+}
+/* fondo chat transparente */ */
+.basechat{
+
+  border-radius: 10px;
+  list-style: none;
+  width: 800px;
+  height: 440px;
+  padding:20px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 100px;
+background-color: #005F85;
+  
+
+}
+/* 
+contemedor de imagen */
+.image_cont{
+
+  width: 200px;
+    height: 200px ;
+    border: 3px solid whitesmoke ;
+    border-radius: 50px 0px 0px 0px ;
+    
+  
+  }
+
+  #img_chat{
+    
+  width: 200px;
+  height: 200px;
+  border-radius: 50px 0px 0px 0px ;
+  padding: 3px;
+
+  }
+
+.cont_Card{
+background-color: #ffff;
+border-radius: 20px;
+margin-bottom: 20px;
+opacity: 0.9;
+height: 400px;
+}
+
+#message-input{
+  width: 600px ;
+  height: 80px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+[placeholder]{
+  color: #ff6207e0;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+
+}
+input{
+  border: 3px solid whitesmoke;
+  outline: none;
+  opacity: 0.9;
+}
+
+input:focus{
+  border: 3px solid #FFD700;
+
+}
+
+/* input chat y boton send  */
+.contFooter{
+  display: flex;
+  margin-top: 270px;
+}
+.cont_Boton{
+flex-direction: column;
+ margin-top: 20px;
+ padding: 20px;
+ margin-left: 5px;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+  /* HOME RESPONSIVO 1 */
+  body {background: whitesmoke;}
+  header{background:#e59982;height: 180px;}
+  h2{display: none;}
+  footer{background-color: #e59982}
+  
+  h1{display: none;}
+
+
+  nav{margin-top: 80px;
+      gap: 20px;
+      padding: 0px 100px;
+    }
+
+  .fotocontenedor{
+    flex-direction: column ;
+    width: 427px;
+    margin: 5px;
+
+    }
+
+  .informacion{
+
+    width: 490px;
+    height: 940px;
+    flex-direction: column;
+    
+  }
+
+
+  .contenedorDesc{
+    width: 427px;
+    flex-direction: column;
+    margin-top: 120px;
+    height: 600px;
+
+
+  }
+/* 
+  footer responsiv 1 */
+footer{flex-direction: column; justify-content: center;}
+  .contenedor_{
+    width: 100%;
+
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+
+ 
+}
+
+  .contenedor_Img{
+   margin-left: 0px;
+  }
+
+  .footer-developers{
+    font-size: 16px;
+    margin-left: 0px;
+
+  }
+
+ .icon, .icon2{
+
+   margin-left: 0px;
+  
+  font-size: 16px;  
+  }
+.icon:hover{
+  color: #F5F5F5;
+  
+}
+
+.icon2:hover{
+  color: #F5F5F5;
+  
+}
+
+  /* 
+DETAIL RESPONSIVO 1*/
+
+
+.informacion_{
+ 
+  width: 315px;
+  height: 700px;
+  flex-wrap: wrap;
+  background-color: #FFA07A;
+  
+
+} 
+.fotocontenedor_{
+width: 275px;
+height: 340px;
+border-radius: 50px 0 0 0 ;
+
+
+}
+#img_d {
+
+  width: 270px;
+  height: 335px;
+ 
+ 
+  
+}
+.contCard_{
+   height: 500px;
+width: 290px;
+padding: 0px;
+margin: 0;
+
+
+}
+
+
+#EstiloId_{
+  font-size: 40px;
+ 
+  padding: 5px;
+  margin-top: 0px;
+  color:#005F85;
+  background-color: whitesmoke;
+}
+
+
+
+
+.contenedorDesc_{
+width: 275px;
+ height: 300px;
+margin-top: 20px;
+background-color: #F5F5F5;
+opacity: 0.8;
+align-items: center;
+
+}
+
+
+ .descripcionDetail_{
+  font-size: 22px;
+  text-align: justify;
+  padding: 15px;
+ 
+}
+
+.botonChat_{
+  width: 170px;
+  align-self: flex-end;
+  margin-top: 0px;
+  background-color: #005F85;
+}
+
+}
+
+
+
+ /* DISEÑO RESPONSIVO 2 */
+  
+ 
+ @media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+  /* HOME  RESPOSIVO 2--------*/
+
+  body {background: whitesmoke;}
+  header{background:#072083;height: 180px;}
+  footer{background-color: #072083;}
+
+  header , h2,  footer, button, h1, nav{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  }
+/* button{
+  flex-direction: column;
+} */
+h1{
+    font-size: 40px;
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 0px;
+    text-align: center;
+    
+  }
+  h2{display: none;}
+
+  nav{ margin-top: 90px;
+    gap: 30px;
+    padding: 0px 100px;
+  }
+  label{
+
+  color: #072083;
+  margin-left: 20px;
+  }
+  select{
+    
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+
+  
+  button {
+    border-radius: 38px;
+    background-color: #ff6207e0;
+    height: 25px;
+    width: 90px;
+    font-size: 20px;
+    font-weight: lighter;
+    justify-content: center;
+  }
+
+#nombreEstilo :hover{ color: #072083;}
+
+.fotocontenedor{
+  flex-direction: column ;
+  width: 227px;
+
+  }
+ 
+
+
+/* DETAIL RESPONSIVO 2----------- */
+
+
+.informacion_{
+
+  width: 490px;
+  height: 600px;
+  flex-direction: column;
+  padding: 10;
+  background-color: #4682B4;
+}
+
+.fotocontenedor_{
+  width: 448px;
+  height: 210px;
+  padding:0 20px;
+  margin-top: 5px;
+ 
+  
+ 
+  }
+
+  #img_d{
+  width:100%;
+  height:210px ;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .contCard_{
+    justify-content: center;
+    padding:0  20px;
+    margin-top: 0px;
+
+  }
+
+  #EstiloId_{
+    font-size: 35px;
+     text-align: center;
+     padding:0px 10px;
+     color: #191970;
+     
+    }
+
+.contenedorDesc_{
+  margin-top: 5px;
+  width: 412px;
+  height: 250px;
+justify-content: center;
+  text-align: justify;
+  background-color: #F5F5F5;
+  opacity: 0.3;
+  align-items: center;
+ 
+  
+}
+
+.descripcionDetail_{
+  font-size: 25px;
+  text-align: justify;
+  width: 100%;
+  color: #191970;
+  padding: 0 20px;
+  
+}
+
+.botonChat_{
+  width: 180px;
+  margin-top: 15px;
+  align-self: center;
+  background-color: #191970;
+  box-shadow:5px 5px 14px #686464;
+}
+}
+
+
+
+ /* #fondoChat{
+  background-image: url("./images/FondoChat.jpg)";
+  background-size: cover;  
+  width: 900px;
+  height: 900px;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+} */
+
+  
+
+
+
