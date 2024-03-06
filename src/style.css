@@ -432,6 +432,15 @@ contemedor de imagen */
   
   }
 
+  #img_chat{
+    
+  width: 200px;
+  height: 200px;
+  border-radius: 50px 0px 0px 0px ;
+  padding: 3px;
+
+  }
+
 .cont_Card{
 background-color: #ffff;
 border-radius: 20px;

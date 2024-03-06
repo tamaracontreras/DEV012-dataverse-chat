@@ -1,4 +1,4 @@
-export const chatComp = () => {
+export const chatComp = (personaje) => {
 
     const section = document.createElement("section");
 
@@ -7,10 +7,11 @@ export const chatComp = () => {
 
     const fotocontenedor = document.createElement("div");
     fotocontenedor.className = "image_cont";
-    // const imgchat = document.createElement('img');
-    // imgchat.setAttribute('src', personaje.imageUrl);
-    // imgchat.setAttribute('alt', personaje.name);
-    // imgchat.setAttribute('id', 'img_chat');
+
+    const imgchat = document.createElement('img');
+    imgchat.setAttribute('src', personaje.imageUrl);
+    imgchat.setAttribute('alt', personaje.name);
+    imgchat.setAttribute('id', 'img_chat');
     
     
     const informacion = document.createElement("div");

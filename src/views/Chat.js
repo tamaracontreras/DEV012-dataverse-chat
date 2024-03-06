@@ -4,6 +4,7 @@ import { generateFooter } from "../components/Footer.js";
 import { data } from "../data/dataset.js";
 import { found } from "../lib/dataFunctions.js";
 
+
  
 
 export const Chat = (id) => {
@@ -19,10 +20,6 @@ export const Chat = (id) => {
     const chat_Comp = chatComp(personajeEncontrado);
     chatView.appendChild(chat_Comp);
    
-
-   
-
-
     const footer = generateFooter();
     chatView.appendChild(footer);
     return chatView;
